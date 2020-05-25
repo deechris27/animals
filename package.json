@@ -1,0 +1,41 @@
+{
+  "name": "petti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:update": "jest --silent -u",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "format": "prettier --write \"src/**/*.{js}\"",
+    "eslint": "eslint \"src/**/*.{js}\" --quiet",
+    "start": "parcel src/public/index.html"
+  },
+  "author": "Deepak <dd43030@gmail.com> (http://tidbit.c.la/)",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "petfinder-client": "1.0.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-loadable": "5.5.0",
+    "react-router-dom": "5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/preset-env": "7.9.6",
+    "@babel/preset-react": "7.9.4",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.20.0",
+    "jest": "26.0.1",
+    "parcel-bundler": "1.12.4",
+    "prettier": "2.0.5",
+    "react-test-renderer": "16.13.1"
+  }
+}
