@@ -13,4 +13,4 @@ module.exports=function(n){return new Promise(function(e,o){var r=document.creat
 },{}],0:[function(require,module,exports) {
 var b=require("yU0Q");b.register("js",require("Bs6y"));b.load([]).then(function(){require("GwFU");});
 },{}]},{},[0], null)
-//# sourceMappingURL=/Details.1322e502.js.map
+//# sourceMappingURL=Details.1322e502.js.map

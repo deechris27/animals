@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./cjs/react.production.min.js":"awqi"}],"jC3k":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react"));function t(e){return e&&e.__esModule?e:{default:e}}function l(t){var l=t.toggleModal,a=t.name;return e.default.createElement(e.default.Fragment,null,e.default.createElement("h1",null,"Do you like ",a,"?"),e.default.createElement("div",{className:"buttons"},e.default.createElement("button",{onClick:l},"Yes"),e.default.createElement("button",{onClick:l},"No")))}var a=l;exports.default=a;
 },{"react":"n8MK"}]},{},["jC3k"], null)
-//# sourceMappingURL=/PromptModal.32830eb5.js.map
+//# sourceMappingURL=PromptModal.32830eb5.js.map

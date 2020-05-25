@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"react":"n8MK","petfinder-client":"HC7O","./SearchContext":"EVQ7"}],"cVkz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=u(require("react")),r=require("react-router-dom"),t=u(require("./SearchBox"));function u(e){return e&&e.__esModule?e:{default:e}}function a(r){return e.default.createElement("div",{className:"search-route"},e.default.createElement(t.default,{search:function(){r.history.push("/")}}))}var o=(0,r.withRouter)(a);exports.default=o;
 },{"react":"n8MK","react-router-dom":"uc19","./SearchBox":"QEvc"}]},{},[], null)
-//# sourceMappingURL=/SearchParams.0f8e3c58.js.map
+//# sourceMappingURL=SearchParams.0f8e3c58.js.map
