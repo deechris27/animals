@@ -5,7 +5,7 @@ import {HashRouter} from 'react-router-dom';
 
 const rootElement = document.getElementById('root');
 const renderApp = Component => {
-    render(<HashRouter basename="dist/"><Component/></HashRouter>, rootElement)
+    render(<HashRouter basename="./"><Component/></HashRouter>, rootElement)
 };
 
 renderApp(App);
