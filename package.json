@@ -10,7 +10,7 @@
     "test:coverage": "jest --coverage",
     "format": "prettier --write \"src/**/*.{js}\"",
     "eslint": "eslint \"src/**/*.{js}\" --quiet",
-    "build": "parcel build src/public/index.html --public-url ./dist/",
+    "build": "parcel build src/public/index.html --public-url ./",
     "heroku-postbuild": "npm run install && npm run install --only=dev && npm run build",
     "start": "parcel src/public/index.html"
     
