@@ -10,16 +10,18 @@
     "test:coverage": "jest --coverage",
     "format": "prettier --write \"src/**/*.{js}\"",
     "eslint": "eslint \"src/**/*.{js}\" --quiet",
+    "deploy": "gh-pages -d ./dist",
     "build": "parcel build src/public/index.html --public-url ./",
     "heroku-postbuild": "npm run install && npm run install --only=dev && npm run build",
     "start": "parcel src/public/index.html"
-    
   },
   "author": "Deepak <dd43030@gmail.com> (http://tidbit.c.la/)",
+  "homepage": "http://deechris27.github.io/animals",
   "license": "MIT",
   "dependencies": {
     "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
+    "gh-pages": "2.2.0",
     "petfinder-client": "1.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
