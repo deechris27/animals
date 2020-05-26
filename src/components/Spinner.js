@@ -27,7 +27,7 @@ const rotateTwo = keyframes`
     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    transform: rotateX(50deg) rotateY(00deg) rotateZ(360deg);
   }
 `
 

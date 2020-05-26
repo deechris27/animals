@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { ANIMALS } from 'petfinder-client';
 import { Consumer } from './SearchContext';
 
@@ -8,6 +8,10 @@ function SearchBox({ search }) {
         event.preventDefault();
         search();
     };
+
+    useEffect(()=>{
+       
+    }, [])
 
     return (
         <Consumer>

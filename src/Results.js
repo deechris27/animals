@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import pf from 'petfinder-client';
 import {Consumer} from './SearchContext';
 import Pet from './Pet';
+import Loader from './components/Spinner';
 
 const doggy = pf({
     key: process.env.API_KEY,
@@ -11,6 +12,7 @@ const doggy = pf({
 function Results(props) {
 
     const [pets, setPets] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
        search();
@@ -32,8 +34,13 @@ function Results(props) {
                  pets = [];
              }
 
-             setPets(pets)
+             setPets(pets);
+             setLoading(false);
          })
+    }
+
+    if(loading){
+        return <Loader loading={loading}/>
     }
 
     return (
