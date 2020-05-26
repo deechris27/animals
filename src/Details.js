@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom';
 import Carousel from './Carousel';
 import Modal from './Modal';
 import Loadable from 'react-loadable';
+import Loader from './components/Spinner';
 
 const doggy = pf({
     key: process.env.API_KEY,
@@ -46,7 +47,8 @@ function Details(props) {
     }));
 
     if(state.isLoading){
-        return <h1>Loading......</h1>
+        //return <h1>Loading......</h1>
+        return <Loader loading={state.isLoading}/>
     }
 
     const {media, animal, breed, location, description, name, showModal} = state;
@@ -56,8 +58,8 @@ function Details(props) {
            <Carousel media={media}/>
            <div>
               <h1>{name}</h1>
-              <h2>{`${animal} -- ${breed} -- ${location}`}</h2>
-              <button onClick={toggleModal}>Adopt {name}</button>
+              <h2>{`${animal} --- ${breed} --- ${location}`}</h2>
+              <button onClick={toggleModal}>Pick {name}</button>
               <p>{description}</p>
               {showModal ? (
                   <Modal>

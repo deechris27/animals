@@ -4,6 +4,7 @@ import pf from 'petfinder-client';
 import { Provider } from './SearchContext';
 import Navbar from './components/Navbar';
 import Loadable from 'react-loadable';
+import Loader from './components/Spinner';
 
 const doggy = pf({
     key: process.env.API_KEY,
@@ -13,21 +14,22 @@ const doggy = pf({
 const LoadableDetails = Loadable({
     loader: () => import('./Details'),
     loading(){
-        return <h1>Loading animal details...</h1>
+        return <Loader />
+        // return <h1>Loading animal details...</h1>
     }
 });
 
 const LoadableSearch = Loadable({
     loader: () => import('./SearchParams'),
     loading(){
-        return <h1>Loading search page...</h1>
+        return <Loader />
     }
 });
 
 const LoadableResults = Loadable({
     loader: () => import('./Results'),
     loading(){
-        return <h1>Loading results page...</h1>
+        return <Loader />
     }
 });
 
