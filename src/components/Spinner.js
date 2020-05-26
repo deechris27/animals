@@ -24,10 +24,10 @@ const rotateOne = keyframes`
 
 const rotateTwo = keyframes`
 0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(50deg) rotateY(00deg) rotateZ(360deg);
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(360deg);
   }
 `
 
