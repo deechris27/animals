@@ -14,7 +14,7 @@ const doggy = pf({
 const LoadablePrompModal = Loadable({
     loader: () => import('./components/PromptModal'),
     loading(){
-        return <h1>Loading modal...</h1>
+        return <Loader />
     }
 })
 
