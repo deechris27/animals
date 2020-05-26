@@ -313,7 +313,7 @@ var LoadablePrompModal = (0, _reactLoadable.default)({
     return require("_bundle_loader")(require.resolve('./components/PromptModal'));
   },
   loading: function loading() {
-    return /*#__PURE__*/_react.default.createElement("h1", null, "Loading modal...");
+    return /*#__PURE__*/_react.default.createElement(_Spinner.default, null);
   }
 });
 
@@ -415,7 +415,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50320" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

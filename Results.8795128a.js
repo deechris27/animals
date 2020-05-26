@@ -183,6 +183,8 @@ var _SearchContext = require("./SearchContext");
 
 var _Pet = _interopRequireDefault(require("./Pet"));
 
+var _Spinner = _interopRequireDefault(require("./components/Spinner"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
@@ -214,6 +216,11 @@ function Results(props) {
       pets = _useState2[0],
       setPets = _useState2[1];
 
+  var _useState3 = (0, _react.useState)(true),
+      _useState4 = _slicedToArray(_useState3, 2),
+      loading = _useState4[0],
+      setLoading = _useState4[1];
+
   (0, _react.useEffect)(function () {
     search();
   }, []);
@@ -235,6 +242,13 @@ function Results(props) {
       }
 
       setPets(pets);
+      setLoading(false);
+    });
+  }
+
+  if (loading) {
+    return /*#__PURE__*/_react.default.createElement(_Spinner.default, {
+      loading: loading
     });
   }
 
@@ -262,7 +276,7 @@ function ResultsContext(props) {
     }));
   });
 }
-},{"react":"../node_modules/react/index.js","petfinder-client":"../node_modules/petfinder-client/index.js","./SearchContext":"../SearchContext.js","./Pet":"../Pet.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","petfinder-client":"../node_modules/petfinder-client/index.js","./SearchContext":"../SearchContext.js","./Pet":"../Pet.js","./components/Spinner":"../components/Spinner.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -290,7 +304,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50320" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

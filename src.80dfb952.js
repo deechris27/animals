@@ -58572,7 +58572,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n  100% {\n    transform: rotateX(50deg) rotateY(00deg) rotateZ(360deg);\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -58991,7 +58991,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50320" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
